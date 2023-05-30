@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.scss';
+import './assets/scss/style.scss';
+import './assets/scss/normalize.scss';
 import { App } from './App';
-import { TodoList } from './pages/TodoList';
+import { TodoListPage } from './pages/TodoListPage';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -10,6 +11,6 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <App />
-    <TodoList/>
+    <TodoListPage/>
   </React.StrictMode>
 );
