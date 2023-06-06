@@ -2,15 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './assets/scss/style.scss';
 import './assets/scss/normalize.scss';
-import { App } from './App';
-import { TodoListPage } from './pages/TodoListPage';
+import { router } from './router';
+import { RouterProvider } from 'react-router-dom';
+//import { store } from './store'
+//import { Provider } from 'react-redux'
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
 root.render(
   <React.StrictMode>
-    <App />
-    <TodoListPage/>
+    <RouterProvider router={router}/>
   </React.StrictMode>
 );
